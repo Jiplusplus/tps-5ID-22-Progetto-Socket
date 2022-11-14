@@ -1,0 +1,10 @@
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\bin\Debug\Casello_2.0.exe.config
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\bin\Debug\Casello_2.0.exe
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\bin\Debug\Casello_2.0.pdb
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.csprojAssemblyReference.cache
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2._0.Form1.resources
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2._0.Properties.Resources.resources
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.csproj.GenerateResource.cache
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.csproj.CoreCompileInputs.cache
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.exe
+C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.pdb
