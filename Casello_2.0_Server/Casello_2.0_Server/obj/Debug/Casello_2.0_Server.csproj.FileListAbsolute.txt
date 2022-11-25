@@ -8,3 +8,13 @@ C:\Users\ji.18153\source\repos\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\C
 C:\Users\ji.18153\source\repos\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.csproj.CoreCompileInputs.cache
 C:\Users\ji.18153\source\repos\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.exe
 C:\Users\ji.18153\source\repos\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.pdb
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.csproj.AssemblyReference.cache
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2._0_Server.Form1.resources
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2._0_Server.Properties.Resources.resources
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.csproj.GenerateResource.cache
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.exe
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\obj\Debug\Casello_2.0_Server.pdb
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\bin\Debug\Casello_2.0_Server.exe.config
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\bin\Debug\Casello_2.0_Server.exe
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Server\Casello_2.0_Server\bin\Debug\Casello_2.0_Server.pdb

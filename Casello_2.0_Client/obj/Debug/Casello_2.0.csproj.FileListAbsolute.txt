@@ -8,3 +8,13 @@ C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.csproj
 C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.csproj.CoreCompileInputs.cache
 C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.exe
 C:\Users\ji.18153\Downloads\Casello_2.0\Casello_2.0\obj\Debug\Casello_2.0.pdb
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\bin\Debug\Casello_2.0.exe.config
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\bin\Debug\Casello_2.0.exe
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\bin\Debug\Casello_2.0.pdb
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.AssemblyReference.cache
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2._0.Form1.resources
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2._0.Properties.Resources.resources
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.GenerateResource.cache
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2.0.exe
+C:\Users\Utente\Download\tps-5ID-22-Progetto-Socket-main (1)\tps-5ID-22-Progetto-Socket-main\Casello_2.0_Client\obj\Debug\Casello_2.0.pdb

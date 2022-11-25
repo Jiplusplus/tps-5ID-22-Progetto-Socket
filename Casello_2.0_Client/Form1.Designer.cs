@@ -31,24 +31,26 @@ namespace Casello_2._0
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_num = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
@@ -63,14 +65,14 @@ namespace Casello_2._0
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.connetti = new System.Windows.Forms.Button();
+            this.list_eventi = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -83,7 +85,7 @@ namespace Casello_2._0
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(44, 116);
+            this.panel1.Location = new System.Drawing.Point(48, 198);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(323, 430);
             this.panel1.TabIndex = 0;
@@ -94,7 +96,7 @@ namespace Casello_2._0
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txt_num);
             this.panel2.Controls.Add(this.button12);
             this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.button10);
@@ -111,144 +113,6 @@ namespace Casello_2._0
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(265, 377);
             this.panel2.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(21, 209);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 26);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(21, 262);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 26);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "5";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(79, 209);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(31, 26);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "2";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(137, 209);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(31, 26);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "3";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(137, 262);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(31, 26);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "7";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(79, 262);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(31, 26);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "6";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(21, 311);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(31, 26);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "9";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(79, 311);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(31, 26);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "0";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(137, 311);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(31, 26);
-            this.button9.TabIndex = 11;
-            this.button9.Text = ".";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button10.Location = new System.Drawing.Point(201, 209);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(31, 26);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "4";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button11.Location = new System.Drawing.Point(201, 262);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(31, 26);
-            this.button11.TabIndex = 13;
-            this.button11.Text = "8";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button12.Location = new System.Drawing.Point(201, 311);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(46, 26);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "invio";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 25);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "IMPORTO INSERITO";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(21, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 20);
-            this.textBox3.TabIndex = 15;
             // 
             // label1
             // 
@@ -268,11 +132,149 @@ namespace Casello_2._0
             this.textBox1.Size = new System.Drawing.Size(221, 20);
             this.textBox1.TabIndex = 17;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 25);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "IMPORTO INSERITO";
+            // 
+            // txt_num
+            // 
+            this.txt_num.Location = new System.Drawing.Point(21, 67);
+            this.txt_num.Name = "txt_num";
+            this.txt_num.Size = new System.Drawing.Size(221, 20);
+            this.txt_num.TabIndex = 15;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button12.Location = new System.Drawing.Point(201, 311);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(46, 26);
+            this.button12.TabIndex = 14;
+            this.button12.Text = "invio";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button11.Location = new System.Drawing.Point(201, 262);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(31, 26);
+            this.button11.TabIndex = 13;
+            this.button11.Text = "8";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button10.Location = new System.Drawing.Point(201, 209);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(31, 26);
+            this.button10.TabIndex = 12;
+            this.button10.Text = "4";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button9.Location = new System.Drawing.Point(137, 311);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(31, 26);
+            this.button9.TabIndex = 11;
+            this.button9.Text = ".";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button8.Location = new System.Drawing.Point(79, 311);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(31, 26);
+            this.button8.TabIndex = 10;
+            this.button8.Text = "0";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button7.Location = new System.Drawing.Point(21, 311);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(31, 26);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "9";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button6.Location = new System.Drawing.Point(79, 262);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(31, 26);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "6";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button5.Location = new System.Drawing.Point(137, 262);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(31, 26);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "7";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.Location = new System.Drawing.Point(137, 209);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(31, 26);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "3";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(79, 209);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(31, 26);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "2";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Location = new System.Drawing.Point(21, 262);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(31, 26);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "5";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(21, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(31, 26);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(449, 116);
+            this.panel3.Location = new System.Drawing.Point(453, 198);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(323, 430);
             this.panel3.TabIndex = 1;
@@ -300,6 +302,24 @@ namespace Casello_2._0
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(265, 377);
             this.panel4.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(21, 152);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(221, 20);
+            this.textBox2.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(193, 25);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "INSERISCI IL PIN";
             // 
             // label4
             // 
@@ -439,24 +459,6 @@ namespace Casello_2._0
             this.button24.Text = "1";
             this.button24.UseVisualStyleBackColor = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 25);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "INSERISCI IL PIN";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(21, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 20);
-            this.textBox2.TabIndex = 20;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -482,7 +484,7 @@ namespace Casello_2._0
             this.panel5.BackColor = System.Drawing.Color.DarkCyan;
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(45, 46);
+            this.panel5.Location = new System.Drawing.Point(49, 128);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(322, 73);
             this.panel5.TabIndex = 21;
@@ -492,7 +494,7 @@ namespace Casello_2._0
             this.panel6.BackColor = System.Drawing.Color.DarkCyan;
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(450, 46);
+            this.panel6.Location = new System.Drawing.Point(454, 128);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(322, 73);
             this.panel6.TabIndex = 22;
@@ -517,12 +519,32 @@ namespace Casello_2._0
             this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 2;
             // 
+            // connetti
+            // 
+            this.connetti.Location = new System.Drawing.Point(120, 21);
+            this.connetti.Name = "connetti";
+            this.connetti.Size = new System.Drawing.Size(186, 54);
+            this.connetti.TabIndex = 23;
+            this.connetti.Text = "CONNETTI";
+            this.connetti.UseVisualStyleBackColor = true;
+            this.connetti.Click += new System.EventHandler(this.connetti_Click);
+            // 
+            // list_eventi
+            // 
+            this.list_eventi.FormattingEnabled = true;
+            this.list_eventi.Location = new System.Drawing.Point(445, 21);
+            this.list_eventi.Name = "list_eventi";
+            this.list_eventi.Size = new System.Drawing.Size(330, 82);
+            this.list_eventi.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(828, 574);
+            this.ClientSize = new System.Drawing.Size(828, 703);
+            this.Controls.Add(this.list_eventi);
+            this.Controls.Add(this.connetti);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -562,7 +584,7 @@ namespace Casello_2._0
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_num;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox2;
@@ -587,6 +609,8 @@ namespace Casello_2._0
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button connetti;
+        private System.Windows.Forms.ListBox list_eventi;
     }
 }
 
