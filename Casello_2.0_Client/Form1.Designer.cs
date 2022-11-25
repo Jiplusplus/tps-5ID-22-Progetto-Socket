@@ -35,7 +35,7 @@ namespace Casello_2._0
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_num = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
+            this.invio_contanti = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -97,7 +97,7 @@ namespace Casello_2._0
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txt_num);
-            this.panel2.Controls.Add(this.button12);
+            this.panel2.Controls.Add(this.invio_contanti);
             this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.button10);
             this.panel2.Controls.Add(this.button9);
@@ -150,15 +150,16 @@ namespace Casello_2._0
             this.txt_num.Size = new System.Drawing.Size(221, 20);
             this.txt_num.TabIndex = 15;
             // 
-            // button12
+            // invio_contanti
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button12.Location = new System.Drawing.Point(201, 311);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(46, 26);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "invio";
-            this.button12.UseVisualStyleBackColor = false;
+            this.invio_contanti.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.invio_contanti.Location = new System.Drawing.Point(201, 311);
+            this.invio_contanti.Name = "invio_contanti";
+            this.invio_contanti.Size = new System.Drawing.Size(46, 26);
+            this.invio_contanti.TabIndex = 14;
+            this.invio_contanti.Text = "invio";
+            this.invio_contanti.UseVisualStyleBackColor = false;
+            this.invio_contanti.Click += new System.EventHandler(this.invio_contanti_Click);
             // 
             // button11
             // 
@@ -569,7 +570,7 @@ namespace Casello_2._0
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button invio_contanti;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;

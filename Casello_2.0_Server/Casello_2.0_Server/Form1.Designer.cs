@@ -30,6 +30,7 @@ namespace Casello_2._0_Server
         private void InitializeComponent()
         {
             this.panel6 = new System.Windows.Forms.Panel();
+            this.start = new System.Windows.Forms.Button();
             this.costo = new System.Windows.Forms.TextBox();
             this.richieste = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -41,7 +42,6 @@ namespace Casello_2._0_Server
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.start = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,6 +61,16 @@ namespace Casello_2._0_Server
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(329, 430);
             this.panel6.TabIndex = 4;
+            // 
+            // start
+            // 
+            this.start.Location = new System.Drawing.Point(122, 380);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(79, 26);
+            this.start.TabIndex = 8;
+            this.start.Text = "START";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // costo
             // 
@@ -162,16 +172,6 @@ namespace Casello_2._0_Server
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 2;
             // 
-            // start
-            // 
-            this.start.Location = new System.Drawing.Point(122, 380);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(79, 26);
-            this.start.TabIndex = 8;
-            this.start.Text = "START";
-            this.start.UseVisualStyleBackColor = true;
-            this.start.Click += new System.EventHandler(this.start_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,7 +194,6 @@ namespace Casello_2._0_Server
         #endregion
 
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ListBox richieste;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
@@ -206,6 +205,7 @@ namespace Casello_2._0_Server
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button start;
+        public System.Windows.Forms.ListBox richieste;
     }
 }
 

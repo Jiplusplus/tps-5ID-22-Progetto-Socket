@@ -44,9 +44,11 @@ namespace Casello_2._0_Server
                 {
                     MessageBox.Show("Waiting for a connection...");
                     Socket handler = listener.Accept();
-                    //Random r = new Random();
-                    //int n = r.Next(1, 10);
-                    //richieste.Items.Add("Numero generato : " + n.ToString());
+
+                    ClientManager clientThread = new ClientManager(handler, ref richieste);
+                    Thread t = new Thread(new ThreadStart(clientThread.doClient));
+                    t.Start();
+                    richieste.Items.Add(clientThread.Messaggio);
                     citta.Text = "Bergamo";
                     costo.Text = "5.5";
                 }
@@ -55,6 +57,53 @@ namespace Casello_2._0_Server
             {
                 richieste.Items.Add(e.ToString());
             }
+        }
+    }
+
+    public class ClientManager
+    {
+
+        Socket clientSocket;
+        byte[] bytes = new Byte[1024];
+        String data = "";
+        ListBox richieste;
+
+        public ClientManager(Socket clientSocket, ref ListBox richieste)
+        {
+            this.clientSocket = clientSocket;
+            this.richieste = richieste;
+        }
+
+        public string Messaggio { get { return data; } }
+        public void doClient()
+        {
+
+            while (true)
+            {
+                // An incoming connection needs to be processed.  
+                data = "";
+                while (data.IndexOf("$") == -1)
+                {
+                    int bytesRec = clientSocket.Receive(bytes);
+                    data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
+                }
+
+                
+                // Show the data on the console.  
+                MessageBox.Show("Messaggio ricevuto :" + data);
+                
+                // Echo the data back to the client.  
+                byte[] msg = Encoding.ASCII.GetBytes(data);
+                clientSocket.Send(msg);
+
+
+                richieste.Items.Add(data);
+            }
+
+            clientSocket.Shutdown(SocketShutdown.Both);
+            clientSocket.Close();
+            data = "";
+
         }
     }
 }
