@@ -117,10 +117,8 @@ namespace Casello_2._0
                             int bytesRec = sender.Receive(bytes);
                             data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
                         }
-                        if (data == stringa_da_inviare)
-                        {
-                        MessageBox.Show("funziona");
-                        }
+
+
                     // Release the socket.
                     sender.Shutdown(SocketShutdown.Both);
                     sender.Close();

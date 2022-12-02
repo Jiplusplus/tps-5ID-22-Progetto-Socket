@@ -42,15 +42,14 @@ namespace Casello_2._0_Server
 
                 while (true)
                 {
-                    MessageBox.Show("Waiting for a connection...");
+                    //MessageBox.Show("Waiting for a connection...");
                     Socket handler = listener.Accept();
-
-                    ClientManager clientThread = new ClientManager(handler, ref richieste);
+                    ClientManager clientThread = new ClientManager(handler, ref richieste, ref costo);
                     Thread t = new Thread(new ThreadStart(clientThread.doClient));
                     t.Start();
                     richieste.Items.Add(clientThread.Messaggio);
                     citta.Text = "Bergamo";
-                    costo.Text = "5.5";
+                    costo.Text = "5,5";
                 }
             }
             catch (Exception e)
@@ -67,11 +66,13 @@ namespace Casello_2._0_Server
         byte[] bytes = new Byte[1024];
         String data = "";
         ListBox richieste;
+        TextBox costo;
 
-        public ClientManager(Socket clientSocket, ref ListBox richieste)
+        public ClientManager(Socket clientSocket, ref ListBox richieste, ref TextBox costo)
         {
             this.clientSocket = clientSocket;
             this.richieste = richieste;
+            this.costo = costo;
         }
 
         public string Messaggio { get { return data; } }
@@ -88,16 +89,19 @@ namespace Casello_2._0_Server
                     data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
                 }
 
-                
+                //data = data.Substring(0, data.Length - 1);
+
                 // Show the data on the console.  
-                MessageBox.Show("Messaggio ricevuto :" + data);
+                //MessageBox.Show("Messaggio ricevuto :" + data);
                 
                 // Echo the data back to the client.  
                 byte[] msg = Encoding.ASCII.GetBytes(data);
                 clientSocket.Send(msg);
-
-
-                richieste.Items.Add(data);
+                richieste.Items.Add("Hai pagato" + data.Substring(0, data.Length - 1));
+                int differenza;
+                //System.Diagnostics.Debug.WriteLine(Int32.Parse(costo.Text) - Int32.Parse(data.Substring(0, data.Length - 1)));
+                //differenza = Int32.Parse(costo.Text) - Int32.Parse(data);
+                //richieste.Items.Add("Hai ancora da pagare" + differenza.ToString());
             }
 
             clientSocket.Shutdown(SocketShutdown.Both);
