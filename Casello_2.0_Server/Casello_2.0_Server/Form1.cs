@@ -44,17 +44,18 @@ namespace Casello_2._0_Server
                 {
                     //MessageBox.Show("Waiting for a connection...");
                     Socket handler = listener.Accept();
-                    ClientManager clientThread = new ClientManager(handler, ref richieste, ref costo);
+                    ClientManager clientThread = new ClientManager(handler, ref richieste, ref costo, ref sem_verde);
                     Thread t = new Thread(new ThreadStart(clientThread.doClient));
                     t.Start();
-                    richieste.Items.Add(clientThread.Messaggio);
+                    //MessageBox.Show(clientThread.Messaggio);
                     citta.Text = "Bergamo";
-                    costo.Text = "5,5";
+                    costo.Text = "50";
                 }
             }
             catch (Exception e)
             {
                 richieste.Items.Add(e.ToString());
+                
             }
         }
     }
@@ -65,48 +66,60 @@ namespace Casello_2._0_Server
         Socket clientSocket;
         byte[] bytes = new Byte[1024];
         String data = "";
+        String data_card = "";
         ListBox richieste;
         TextBox costo;
+        Panel verde;
 
-        public ClientManager(Socket clientSocket, ref ListBox richieste, ref TextBox costo)
+        public ClientManager(Socket clientSocket, ref ListBox richieste, ref TextBox costo, ref Panel verde)
         {
             this.clientSocket = clientSocket;
             this.richieste = richieste;
             this.costo = costo;
+            this.verde = verde;
         }
 
-        public string Messaggio { get { return data; } }
         public void doClient()
         {
 
             while (true)
-            {
-                // An incoming connection needs to be processed.  
+            { 
                 data = "";
                 while (data.IndexOf("$") == -1)
                 {
                     int bytesRec = clientSocket.Receive(bytes);
                     data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
                 }
+                richieste.Items.Add("Hai pagato: " + data.Substring(0, data.Length - 1) + " Euro");
+                int CostoTot = int.Parse(costo.Text);
+                int DataTot = int.Parse(data.Substring(0, data.Length - 1));
+                int differenza = CostoTot - DataTot;
+                if(differenza == 0)
+                {
+                    Random Random = new Random();
+                    richieste.Items.Add("Pagamento effetuato, buon viaggio");
+                    costo.Text = Random.Next(10, 50).ToString();
+                    DataTot = differenza;
+                    verde.BackColor = Color.Green;
+                    byte[] msg = Encoding.ASCII.GetBytes(DataTot.ToString() + "$");
+                    clientSocket.Send(msg);
+                }
+                else
+                {
+                    richieste.Items.Add("Hai ancora da pagare: " + differenza + " Euro");
+                    costo.Text = differenza.ToString();
+                    DataTot = differenza;
+                    verde.BackColor = Color.Red;
+                    byte[] msg = Encoding.ASCII.GetBytes(DataTot.ToString() + "$");
+                    clientSocket.Send(msg);
+                }
 
-                //data = data.Substring(0, data.Length - 1);
-
-                // Show the data on the console.  
-                //MessageBox.Show("Messaggio ricevuto :" + data);
-                
-                // Echo the data back to the client.  
-                byte[] msg = Encoding.ASCII.GetBytes(data);
-                clientSocket.Send(msg);
-                richieste.Items.Add("Hai pagato" + data.Substring(0, data.Length - 1));
-                int differenza;
-                //System.Diagnostics.Debug.WriteLine(Int32.Parse(costo.Text) - Int32.Parse(data.Substring(0, data.Length - 1)));
-                //differenza = Int32.Parse(costo.Text) - Int32.Parse(data);
-                //richieste.Items.Add("Hai ancora da pagare" + differenza.ToString());
             }
 
             clientSocket.Shutdown(SocketShutdown.Both);
             clientSocket.Close();
             data = "";
+            data_card = "";
 
         }
     }

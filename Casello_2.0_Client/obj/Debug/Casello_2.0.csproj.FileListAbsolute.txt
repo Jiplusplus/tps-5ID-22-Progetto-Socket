@@ -28,3 +28,13 @@ C:\Users\ji.18153\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debu
 C:\Users\ji.18153\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.CoreCompileInputs.cache
 C:\Users\ji.18153\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.exe
 C:\Users\ji.18153\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.pdb
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\bin\Debug\Casello_2.0.exe.config
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\bin\Debug\Casello_2.0.exe
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\bin\Debug\Casello_2.0.pdb
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.AssemblyReference.cache
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2._0.Form1.resources
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2._0.Properties.Resources.resources
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.GenerateResource.cache
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.csproj.CoreCompileInputs.cache
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.exe
+C:\Users\Utente\OneDrive\Desktop\tps-5ID-22-Progetto-Socket\Casello_2.0_Client\obj\Debug\Casello_2.0.pdb

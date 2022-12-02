@@ -34,8 +34,7 @@ namespace Casello_2._0_Server
             this.costo = new System.Windows.Forms.TextBox();
             this.richieste = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.sem_verde = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.citta = new System.Windows.Forms.TextBox();
@@ -64,6 +63,7 @@ namespace Casello_2._0_Server
             // 
             // start
             // 
+            this.start.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start.Location = new System.Drawing.Point(122, 380);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(79, 26);
@@ -74,44 +74,38 @@ namespace Casello_2._0_Server
             // 
             // costo
             // 
+            this.costo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.costo.Location = new System.Drawing.Point(56, 195);
             this.costo.Name = "costo";
-            this.costo.Size = new System.Drawing.Size(200, 20);
+            this.costo.Size = new System.Drawing.Size(200, 22);
             this.costo.TabIndex = 7;
             // 
             // richieste
             // 
+            this.richieste.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richieste.FormattingEnabled = true;
+            this.richieste.ItemHeight = 16;
             this.richieste.Location = new System.Drawing.Point(17, 230);
             this.richieste.Name = "richieste";
-            this.richieste.Size = new System.Drawing.Size(289, 134);
+            this.richieste.Size = new System.Drawing.Size(289, 132);
             this.richieste.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.sem_verde);
             this.panel3.Location = new System.Drawing.Point(20, 16);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(291, 59);
             this.panel3.TabIndex = 1;
             // 
-            // panel5
+            // sem_verde
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel5.Location = new System.Drawing.Point(181, 14);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(60, 30);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Red;
-            this.panel4.Location = new System.Drawing.Point(36, 14);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(60, 30);
-            this.panel4.TabIndex = 0;
+            this.sem_verde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.sem_verde.Location = new System.Drawing.Point(106, 14);
+            this.sem_verde.Name = "sem_verde";
+            this.sem_verde.Size = new System.Drawing.Size(60, 30);
+            this.sem_verde.TabIndex = 1;
             // 
             // label2
             // 
@@ -137,9 +131,10 @@ namespace Casello_2._0_Server
             // 
             // citta
             // 
+            this.citta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.citta.Location = new System.Drawing.Point(56, 117);
             this.citta.Name = "citta";
-            this.citta.Size = new System.Drawing.Size(200, 20);
+            this.citta.Size = new System.Drawing.Size(200, 22);
             this.citta.TabIndex = 5;
             // 
             // panel1
@@ -195,8 +190,7 @@ namespace Casello_2._0_Server
 
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel sem_verde;
         private System.Windows.Forms.TextBox costo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
